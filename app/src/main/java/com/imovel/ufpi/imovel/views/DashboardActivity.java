@@ -112,22 +112,8 @@ public class DashboardActivity extends AppCompatActivity {
     }
 
     public void buscarAnuncios(View view) {
-//        RadioGroup tipo = (RadioGroup) view.findViewById(R.id.TipoImovel);
-//        RadioGroup quartos = (RadioGroup) view.findViewById(R.id.NumeroQuartos);
-//        RadioGroup banheiros = (RadioGroup) view.findViewById(R.id.NumeroBanheiros);
-//
-//        String cidade = ((EditText) view.findViewById(R.id.editTextCidade)).getText().toString();
-//        String estado = ((EditText) view.findViewById(R.id.editTextEstado)).getText().toString();
-//
-//        bundleUsuario.putString("cidade", cidade);
-//        bundleUsuario.putString("estado", estado);
-//        bundleUsuario.putInt("tipo", tipoAnuncio(tipo));
-//        bundleUsuario.putInt("quartos", quantidadeQuartos(quartos));
-//        bundleUsuario.putInt("banheiros", quantidadeBanheiros(banheiros));
         try{
             Intent intent = new Intent(this, ListaAnunciosActivity.class);
-
-//            intent.putExtras(bundleUsuario);
 
             startActivity(intent);
         } catch (Exception e) {
