@@ -1,0 +1,239 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        is-multidex="true"
+        jar="/home/josereis/.android/build-cache/9f188236a1bb06e066f0d2a0fc892b4673dc137d/output/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="26.0.0"
+        sha1="cddcd0fb93bc70e27325f2f715b2710332004ebb">
+        <dex dex="/home/josereis/AndroidStudioProjects/Imovel/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_ebba0bcab2cb68060b6876388b7681461c6c85b0/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/josereis/.android/build-cache/fb7d20aefedb967a6078996115fba8ce17edcf56/output/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="26.0.0"
+        sha1="9935891f23923f39d002087085d9696568a9f657">
+        <dex dex="/home/josereis/AndroidStudioProjects/Imovel/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_074fc24b83980cda6957f92e31ee8fcd6093982b/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/josereis/.android/build-cache/1443d7f12891fa72b09102a319d128ccb5cc2df4/output/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="26.0.0"
+        sha1="acd4f9fad8500386084346a88ca47e2b66e84ffd">
+        <dex dex="/home/josereis/AndroidStudioProjects/Imovel/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_9995041f16ab2c32029f4118663f68b64aa16039/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/josereis/.android/build-cache/3f29195b58cd2527eef3d9ef0aa3ed8ba2b944d0/output/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="26.0.0"
+        sha1="8df0e365e40beb151bc42dee20817721a6cab7b0">
+        <dex dex="/home/josereis/AndroidStudioProjects/Imovel/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_212f4326a6d769d9aa35615b871aa0c1c82d6b39/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/josereis/.android/build-cache/47ddc03eee3c3ef819df27f7b30421f3f39c5de6/output/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="26.0.0"
+        sha1="587840a157b50a6380d814a7a5a87b76118405e2">
+        <dex dex="/home/josereis/AndroidStudioProjects/Imovel/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_49f962b6775fab3a825e64681e0dd721d52a990d/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/josereis/.android/build-cache/32a1f114967de4f7af26ccd1ebb934cb63d44b18/output/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="26.0.0"
+        sha1="db939a450ea2a721db84e774bf108e20c44a8a1d">
+        <dex dex="/home/josereis/AndroidStudioProjects/Imovel/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_68c888670078a175e25aaa70a065984e686f43ef/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/josereis/.android/build-cache/1dae979bd28434e05ed9057bf4f93d7aca943ced/output/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="26.0.0"
+        sha1="18d31838aa4fcc768a8a0516e22cc13b94655d89">
+        <dex dex="/home/josereis/AndroidStudioProjects/Imovel/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_87871d07d287dd4688ba19436f090eab05705bff/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/josereis/AndroidStudioProjects/Imovel/app/build/intermediates/incremental-runtime-classes/debug/instant-run.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="26.0.0"
+        sha1="3be78ebc2706b2e1fe2f12d5726887a92d6c183b">
+        <dex dex="/home/josereis/AndroidStudioProjects/Imovel/app/build/intermediates/transforms/dex/debug/folders/1000/10000/instant-run_b81a292a0374d0e3d619f61a2b0b5171044878e2/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/josereis/.android/build-cache/0063e5f6a11caa05096023c87729bdbea09343a3/output/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="26.0.0"
+        sha1="88246166d5afb106f532f6e6deae683c66b42c89">
+        <dex dex="/home/josereis/AndroidStudioProjects/Imovel/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_d568157c41bedb1d4500b8feb735c8398fa72e5a/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/josereis/.android/build-cache/8d6db4b7e052d738655176b7944275458d44fad6/output/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="26.0.0"
+        sha1="2a2d9cd43adbe7599a78f2293273a77881c1909a">
+        <dex dex="/home/josereis/AndroidStudioProjects/Imovel/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_1d00b73eb4898e8b58df64146c8146dca1c92936/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/josereis/.android/build-cache/458a76231b3fe13df21bdc7b4c5d3ca49bbc9086/output/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="26.0.0"
+        sha1="44ee06abb66da30f5855e6bf54574e64cdcd982a">
+        <dex dex="/home/josereis/AndroidStudioProjects/Imovel/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_1157876a2e52ff90436e437058342871e585754d/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/josereis/.android/build-cache/d3341f7a1fb55d770b002029ea8fa2dc1ad691ad/output/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="26.0.0"
+        sha1="86baa7d1051901fc1b8e7f596732f71f32175bde">
+        <dex dex="/home/josereis/AndroidStudioProjects/Imovel/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_77c4a79a3e0895abcba6f1876a2fee54f5988b57/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/josereis/.android/build-cache/acb7c934ec6dcb493dc642a480de012c3c109805/output/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="26.0.0"
+        sha1="4737d9835cf3ea9751f7d6647be60900062d1062">
+        <dex dex="/home/josereis/AndroidStudioProjects/Imovel/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_c6b99a44d0e8c9e58d57064c99c4708335ebf73d/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/josereis/.android/build-cache/14a143f7656ebbdc4be1d316d694431a8cdf6731/output/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="26.0.0"
+        sha1="952944218ecedea1554a513dec0c14d570642843">
+        <dex dex="/home/josereis/AndroidStudioProjects/Imovel/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_10a78365e7862d9b7f43a9dafd1b97bb55626ab9/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/josereis/Android/Sdk/extras/android/m2repository/com/android/support/support-annotations/26.0.0-alpha1/support-annotations-26.0.0-alpha1.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="26.0.0"
+        sha1="023ee503b631f69511e335a061ea008f8da60f40">
+        <dex dex="/home/josereis/AndroidStudioProjects/Imovel/app/build/intermediates/transforms/dex/debug/folders/1000/10/support-annotations-26.0.0-alpha1_d4b7b8cf6402e3ce5ed93fe9a049ef4def4e951b/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/josereis/.android/build-cache/61f1cb83668e3afe9fc5cab903390fa2052811d1/output/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="26.0.0"
+        sha1="47471eb19df288158b00b8d9cfa41bce7373f5cc">
+        <dex dex="/home/josereis/AndroidStudioProjects/Imovel/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_756001a7b923d8939258a654dfad084dafd6c89a/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/josereis/Android/Sdk/extras/m2repository/com/android/support/constraint/constraint-layout-solver/1.0.2/constraint-layout-solver-1.0.2.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="26.0.0"
+        sha1="b9cd8fc6bd15cb915735d34535db30ece0c44603">
+        <dex dex="/home/josereis/AndroidStudioProjects/Imovel/app/build/intermediates/transforms/dex/debug/folders/1000/10/constraint-layout-solver-1.0.2_61681f78b7c1899265be8eb66a6adef4c4dd34fa/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/josereis/.android/build-cache/36d6e6562c859acc1fbe698cd289c29d04064a04/output/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="26.0.0"
+        sha1="fcd01fd11233459f546c437ec927e9b61bf7caf1">
+        <dex dex="/home/josereis/AndroidStudioProjects/Imovel/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_2e5156bc676d92be8f349dee7ca557133839ecc1/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/josereis/.android/build-cache/8ab6198312f992c77ca7548764215f4e1ace4daf/output/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="26.0.0"
+        sha1="d7c42c80f6509b9ea4db28ca7859ffae08ec5741">
+        <dex dex="/home/josereis/AndroidStudioProjects/Imovel/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_34cbf77b0b5bc46d76314d5b2b1c7d097781927a/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/josereis/.android/build-cache/0d30a5218bcdbf4554fc72a6340608cabeeda01c/output/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="26.0.0"
+        sha1="f909161e9bac1dd36538a275f06cae462082316a">
+        <dex dex="/home/josereis/AndroidStudioProjects/Imovel/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_9a55f313234e71cbb9571b5e056f2206e1d73601/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/josereis/.android/build-cache/41eea23f6565884a230456521c49cb9af38d275a/output/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="26.0.0"
+        sha1="a71be5f29a1c1e3fd3e84472742668f101a5b936">
+        <dex dex="/home/josereis/AndroidStudioProjects/Imovel/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_e6177ab8aff1b873c302b538e68e329bf828d9a9/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/josereis/.android/build-cache/4085052f2f7d4a9ba7aeacdf64cd8fe0eaa04c00/output/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="26.0.0"
+        sha1="c4f45092eee6cdf1a5dbd597b2b6819be652ce2e">
+        <dex dex="/home/josereis/AndroidStudioProjects/Imovel/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_fc6c656f9c000f338e18520a2cb68576e7bf92fd/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/josereis/.android/build-cache/f3280f75cbc526eeba8fde45ca417ecca76f4230/output/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="26.0.0"
+        sha1="5493a7c08b74d424d08a23c68334893cfd2d5ee3">
+        <dex dex="/home/josereis/AndroidStudioProjects/Imovel/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_8885e8b72913d59fa6c95943ed837537e1d99b25/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/josereis/AndroidStudioProjects/Imovel/app/build/intermediates/incremental-classes/debug/instant-run-bootstrap.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="26.0.0"
+        sha1="1211655c6d37141e6c52e67666f7028ffd7b85d0">
+        <dex dex="/home/josereis/AndroidStudioProjects/Imovel/app/build/intermediates/transforms/dex/debug/folders/1000/10000/instant-run-bootstrap_f5fb6f8c45fc7cb11a406e73e319f45f4e1e83ee/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/josereis/.android/build-cache/185ea09188c61e1c2a38087ec5cd24793b93f7b6/output/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="26.0.0"
+        sha1="6a022bf00ccd0948a8180c505e8e458bbddd43a6">
+        <dex dex="/home/josereis/AndroidStudioProjects/Imovel/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_cb118f6592731cd7573cf70e794f45ac2ca75f0a/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/josereis/.android/build-cache/84fc55fcd47ebb65fc9e0d6e60954f0a99e6ce75/output/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="26.0.0"
+        sha1="2e92aa0163544a804a0b34f169ca61801770839a">
+        <dex dex="/home/josereis/AndroidStudioProjects/Imovel/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_fb7574794b383f5f456a1cc9e1159d9d749d9711/classes.dex" />
+    </item>
+
+</items>
