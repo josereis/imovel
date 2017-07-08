@@ -9,7 +9,8 @@
     android:paddingTop="@dimen/activity_vertical_margin"
     tools:context="com.imovel.ufpi.imovel.views.ListaAnunciosActivity">
 
-    <TextView
+    <!-- APRESENTA USANDO UM LIST VIEWS -->
+    <!--<TextView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:text="Anuncios Encontrados"
@@ -25,6 +26,15 @@
         android:layout_marginTop="33dp"
         >
 
-    </ListView>
+    </ListView>-->
+
+    <!-- APRESENTA USANDO UM RecyclerView -->
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/recyclerViewAnuncios"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:elevation="0dp"
+        android:clickable="true"
+        tools:listitem="@layout/item_lista_anuncio"/>
 
 </RelativeLayout>
