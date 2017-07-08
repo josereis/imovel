@@ -11,7 +11,6 @@ import java.io.Serializable;
 public abstract class Anuncio {
     private long id;
     private Imovel imovel;
-    private String descricao;
     private Usuario anunciante;
 
     public long getId() {
@@ -28,14 +27,6 @@ public abstract class Anuncio {
 
     public void setImovel(Imovel imovel) {
         this.imovel = imovel;
-    }
-
-    public String getDescricao() {
-        return descricao;
-    }
-
-    public void setDescricao(String descricao) {
-        this.descricao = descricao;
     }
 
     public Usuario getAnunciante() {
