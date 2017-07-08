@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:id="@+id/linear_itenslistas_background"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/linearlayout_anuncio"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:orientation="vertical"
+            android:paddingLeft="12dp"
+            android:weightSum="1">
+
+
+            <TextView
+                android:id="@+id/textViewDescricao"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="DESCRIÇÃO:"
+                android:textAppearance="@style/TextAppearance.AppCompat.Light.SearchResult.Title" />
+
+            <TextView
+                android:id="@+id/textview_descricao"
+                android:layout_width="372dp"
+                android:layout_height="wrap_content"
+                android:text="Descricao de Anuncio" />
+
+            <TextView
+                android:id="@+id/textViewAnunciante"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="ANUNCIANTE:"
+                android:textAppearance="@style/TextAppearance.AppCompat.Light.SearchResult.Title" />
+
+            <TextView
+                android:id="@+id/textview_anunciante"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Nome Anunciante" />
+
+            <TextView
+                android:id="@+id/textViewLocal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="LOCALIZAÇÃO:"
+                android:textAppearance="@style/TextAppearance.AppCompat.Light.SearchResult.Title" />
+
+            <TextView
+                android:id="@+id/textview_localizacao"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Localização" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="bottom">
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@android:color/darker_gray" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>
