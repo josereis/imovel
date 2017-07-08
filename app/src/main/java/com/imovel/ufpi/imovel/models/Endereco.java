@@ -77,4 +77,8 @@ public class Endereco {
     public void setLongitude(double longitude) {
         this.longitude = longitude;
     }
+
+    public String toString() {
+        return (this.rua + ", " + this.numero + ", " + this.bairro + ", " + this.cidade + "-" + this.estado + ".");
+    }
 }
