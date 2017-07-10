@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent" android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/title_descricao_anuncio"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="@style/TextAppearance.AppCompat.Light.SearchResult.Title"
+        android:text="DESCRIÇÃO:"
+        android:layout_alignParentTop="true" />
+
+    <TextView
+        android:id="@+id/descricao_anuncio"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="descricao do anuncio vem aqui com todos os seus belos detalhes."
+        android:layout_below="@+id/title_descricao_anuncio"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="19dp" />
+
+    <TextView
+        android:id="@+id/title_localizacao_anuncio"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="@style/TextAppearance.AppCompat.Light.SearchResult.Title"
+        android:text="LOCALIZAÇÃO:"
+        android:layout_below="@+id/descricao_anuncio"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="12dp" />
+
+    <TextView
+        android:id="@+id/localizacao_anuncio"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/descricao_anuncio"
+        android:layout_below="@+id/title_localizacao_anuncio"
+        android:text="segue o endereço do imovel aqui anunciado por este usuario" />
+
+    <ImageButton
+        android:id="@+id/imageButton_delete_anuncio"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_below="@+id/localizacao_anuncio"
+        app:srcCompat="@android:drawable/ic_menu_delete" />
+
+</RelativeLayout>
