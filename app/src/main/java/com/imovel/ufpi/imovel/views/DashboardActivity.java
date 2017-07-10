@@ -40,6 +40,10 @@ public class DashboardActivity extends AppCompatActivity {
         return true;
     }
 
+    public void logout() {
+        finish();
+    }
+
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
         //
@@ -49,26 +53,19 @@ public class DashboardActivity extends AppCompatActivity {
             case R.id.action_anunciar:
                 {
                     Toast.makeText(getApplicationContext(), "Cadastrar um novo Anuncio.", Toast.LENGTH_LONG).show();
-
-                    return true;
                 }
             case R.id.action_favoritos:
                 {
                     Toast.makeText(getApplicationContext(), "Exibe todos os anuncios que forma favoritados.", Toast.LENGTH_LONG).show();
-
-                    return true;
                 }
             case R.id.action_contactados:
                 {
                     Toast.makeText(getApplicationContext(), "Listas os anunciantes contactados.", Toast.LENGTH_LONG).show();
-
-                    return true;
                 }
             case R.id.action_logout:
             {
                 Toast.makeText(getApplicationContext(), "Logout de usuario.", Toast.LENGTH_LONG).show();
-
-                return true;
+//                logout();
             }
             default:
                 break;
@@ -110,8 +107,23 @@ public class DashboardActivity extends AppCompatActivity {
     }
 
     public void buscarAnuncios(View view) {
+        EditText editTextCidade = (EditText) findViewById(R.id.editTextCidade);
+        EditText editTextEstado = (EditText) findViewById(R.id.editTextEstado);
+        RadioGroup radioGroupTipoAnuncio = (RadioGroup) findViewById(R.id.TipoBusca);
+        RadioGroup radioGroupNumeroQuartos = (RadioGroup) findViewById(R.id.NumeroQuartos);
+        RadioGroup radioGroupNumeroBanheiros = (RadioGroup) findViewById(R.id.NumeroBanheiros);
+
         try{
+            // adicionar dados da views ao bundleUsuario para enviar para a Activity de busca e listagem
+            bundleUsuario.putInt("tipo", tipoAnuncio(radioGroupTipoAnuncio));
+            bundleUsuario.putString("cidade", editTextCidade.getText().toString());
+            bundleUsuario.putString("estado", editTextEstado.getText().toString());
+            bundleUsuario.putInt("quartos", quantidadeQuartos(radioGroupNumeroQuartos));
+            bundleUsuario.putInt("banheiros", quantidadeBanheiros(radioGroupNumeroBanheiros));
+
             Intent intent = new Intent(this, ListaAnunciosActivity.class);
+
+            intent.putExtras(bundleUsuario);
 
             startActivity(intent);
         } catch (Exception e) {
@@ -119,8 +131,8 @@ public class DashboardActivity extends AppCompatActivity {
 
             // ocorreu um erro de autenticacao
             String msgErroAutenticacao = "ERRO: não foi possivel concluir a busca";
-            Toast toat1 = Toast.makeText(this, msgErroAutenticacao, Toast.LENGTH_LONG);
-            toat1.show();
+            Toast toat = Toast.makeText(this, msgErroAutenticacao, Toast.LENGTH_LONG);
+            toat.show();
         }
 
     }
