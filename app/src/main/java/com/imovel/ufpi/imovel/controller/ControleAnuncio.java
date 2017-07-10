@@ -2,6 +2,7 @@ package com.imovel.ufpi.imovel.controller;
 
 import com.imovel.ufpi.imovel.models.Anuncio;
 import com.imovel.ufpi.imovel.models.AnuncioAluguel;
+import com.imovel.ufpi.imovel.models.AnuncioCompra;
 import com.imovel.ufpi.imovel.models.Endereco;
 import com.imovel.ufpi.imovel.models.Imovel;
 import com.imovel.ufpi.imovel.models.Usuario;
@@ -13,6 +14,7 @@ import java.util.ArrayList;
  */
 
 public class ControleAnuncio {
+    private final int ALUGUEL = 1;
     private ArrayList<Anuncio> anuncios = new ArrayList<Anuncio>();
 
     public ControleAnuncio() {
@@ -28,6 +30,7 @@ public class ControleAnuncio {
         // criando um usuario teste
         Usuario usuario = new Usuario();
         usuario.setEndereco(end);
+        usuario.setCPF("055.739.763-46");
         usuario.setName("José Reis Ribeiro Santiago");
         usuario.setEmail("jsribeirosantiago4@gmail.com");
 
@@ -51,5 +54,53 @@ public class ControleAnuncio {
 
     public ArrayList<Anuncio> listar(){
         return anuncios;
+    }
+
+    public ArrayList<Anuncio> buscarAnuncioUsuario(String cpf) {
+        ArrayList<Anuncio> result = new ArrayList<Anuncio>();
+
+        for (Anuncio anuncio: anuncios) {
+            if(anuncio.getAnunciante().getCPF().equals(cpf)) {
+                result.add(anuncio);
+            }
+        }
+
+        return result;
+    }
+
+    private ArrayList<Anuncio> buscaAlugueis(int quartos, int banheiros, String cidade, String estado) {
+        ArrayList<Anuncio> result = new ArrayList<Anuncio>();
+        for(Anuncio anuncio: anuncios) {
+            if(anuncio instanceof AnuncioAluguel) {
+                if(anuncio.getImovel().getEndereco().getCidade().equals(cidade) && anuncio.getImovel().getEndereco().getEstado().equals(estado)) {
+                    if(quartos==anuncio.getImovel().getNumeroQuartos() && banheiros==anuncio.getImovel().getNumeroBanheiros()) {
+                        result.add(anuncio);
+                    }
+                }
+            }
+        }
+        return result;
+    }
+
+    private ArrayList<Anuncio> buscaComprar(int quartos, int banheiros, String cidade, String estado) {
+        ArrayList<Anuncio> result = new ArrayList<Anuncio>();
+        for(Anuncio anuncio: anuncios) {
+            if(anuncio instanceof AnuncioCompra) {
+                if(anuncio.getImovel().getEndereco().getCidade().equals(cidade) && anuncio.getImovel().getEndereco().getEstado().equals(estado)) {
+                    if(quartos==anuncio.getImovel().getNumeroQuartos() && banheiros==anuncio.getImovel().getNumeroBanheiros()) {
+                        result.add(anuncio);
+                    }
+                }
+            }
+        }
+        return result;
+    }
+
+    public ArrayList<Anuncio> busca(String cidade, String estado, int tipo, int quartos, int banheiros) {
+        if(tipo==ALUGUEL) {
+            return buscaAlugueis(quartos, banheiros, cidade, estado);
+        } else {
+            return buscaComprar(quartos, banheiros, cidade, estado);
+        }
     }
 }

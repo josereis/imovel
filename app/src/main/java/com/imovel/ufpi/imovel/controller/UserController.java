@@ -24,6 +24,7 @@ public class UserController {
 
             // criando um usuario teste
             usuario.setEndereco(end);
+            usuario.setCPF("055.739.763-46");
             usuario.setName("José Reis Ribeiro Santiago");
             usuario.setEmail("jsribeirosantiago4@gmail.com");
         } else {
