@@ -1,5 +1,6 @@
 package com.imovel.ufpi.imovel.views;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.design.widget.FloatingActionButton;
 import android.support.v7.app.AppCompatActivity;
@@ -50,32 +51,58 @@ public class ListaAnunciosActivity extends AppCompatActivity implements ClickRec
 
         anuncios = (new ControleAnuncio()).listar();
         if(anuncios.size() > 0) {
-
             // tratamento dos casos quando possui uma quantidade de anuncios a ser exibida
-
+            setMRecyclerView();
         } else {
             String mensagem="Não foi retornado o anuncio!";
             Toast toast = Toast.makeText(this, mensagem, Toast.LENGTH_SHORT);
             toast.show();
         }
-
-        setMRecyclerView();
     }
 
     @Override
     public void onBackPressed() {
-        String mensagem="Voltar para tela anterior.";
-        Toast toast = Toast.makeText(this, mensagem, Toast.LENGTH_SHORT);
-        toast.show();
+        try{
+            Intent intent = new Intent(this, DashboardActivity.class);
+
+            startActivity(intent);
+        } catch (Exception e) {
+            System.out.println("ERRO: " + e.getMessage());
+
+            // ocorreu um erro de autenticacao
+            String msgErroAutenticacao = "ERRO: não foi possivel voltar a tela anterior";
+            Toast toat1 = Toast.makeText(this, msgErroAutenticacao, Toast.LENGTH_LONG);
+            toat1.show();
+        }
+
     }
 
     /**
      * Método onde é tratado o click em um item da lista
+     *
      * @param object
      */
     @Override
     public void onCustomClick(Object object) {
+        Anuncio anuncio = (Anuncio) object;
 
+        // verifica se o anuncio referente ao item da lista está sendo passado corretamente
+        if(anuncio != null) {
+            // cria um bundle para enviar informacoes do anuncio
+            Bundle bundle = new Bundle();
+            bundle.putSerializable("anuncio", anuncio);
+
+            // codigo de tratamento da activite
+            Intent intent = new Intent(this, ExibirAnuncio.class);
+
+            intent.putExtras(bundle);
+
+            startActivity(intent);
+        } else {
+            String mensagem = "ERRO: Não passou o Anuncio.";
+            Toast toast = Toast.makeText(this, mensagem, Toast.LENGTH_SHORT);
+            toast.show();
+        }
     }
 
 
