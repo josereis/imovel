@@ -1,17 +1,17 @@
 package com.imovel.ufpi.imovel.models;
 
+import java.io.Serializable;
 import java.util.List;
 
 /**
  * Created by josereis on 30/06/17.
  */
 
-public class Usuario {
+public class Usuario implements Serializable {
     private String CPF;
     private String sexo;
     private String name;
     private String email;
-    private String password;
     private List<Anuncio> anuncios;
     private Endereco endereco = new Endereco();
 
@@ -45,14 +45,6 @@ public class Usuario {
 
     public void setEmail(String email) {
         this.email = email;
-    }
-
-    public String getPassword() {
-        return password;
-    }
-
-    public void setPassword(String password) {
-        this.password = password;
     }
 
     public List<Anuncio> getAnuncios() {
