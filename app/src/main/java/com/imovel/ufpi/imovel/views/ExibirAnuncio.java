@@ -3,7 +3,6 @@ package com.imovel.ufpi.imovel.views;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.widget.TextView;
-import android.widget.Toast;
 
 import com.imovel.ufpi.imovel.R;
 import com.imovel.ufpi.imovel.models.Anuncio;
@@ -62,7 +61,7 @@ public class ExibirAnuncio extends AppCompatActivity {
             quantidadeBanheiros = (TextView) findViewById(R.id.textView_quantidade_banheiros);
             tipoAnuncio = (TextView) findViewById(R.id.textView_aluguel_venda);
             anunciante = (TextView) findViewById(R.id.textView_nome_anunciante);
-            descricao = (TextView) findViewById(R.id.textView_decricao);
+            descricao = (TextView) findViewById(R.id.textView_decricaoTitle);
             endereco = (TextView) findViewById(R.id.textView_endereco);
             valor = (TextView) findViewById(R.id.textView_preco);
             area = (TextView) findViewById(R.id.textView_area);

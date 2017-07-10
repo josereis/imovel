@@ -7,12 +7,6 @@
     tools:context="com.imovel.ufpi.imovel.views.AnunciarImovel">
 
 
-    <android.support.v7.widget.RecyclerView
-        android:id="@+id/recycler_view_anunciarImovel"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        tools:listitem="@layout/item_lista_anuncio"/>
-
     <android.support.design.widget.FloatingActionButton
         android:id="@+id/incluirAnuncio"
         android:layout_width="wrap_content"
@@ -21,5 +15,11 @@
         android:layout_margin="@dimen/fab_margin"
         app:backgroundTint="@color/colorPrimary"
         app:srcCompat="@android:drawable/ic_menu_add" />
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/recycler_view_anunciarImovel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:listitem="@layout/item_lista_anunciados" />
 
 </android.support.design.widget.CoordinatorLayout>

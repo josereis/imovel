@@ -71,7 +71,7 @@
         android:text="Buscar" />
 
     <RadioGroup
-        android:id="@+id/TipoImovel"
+        android:id="@+id/TipoBusca"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_alignParentStart="true"
@@ -97,7 +97,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentStart="true"
-        android:layout_below="@+id/TipoImovel"
+        android:layout_below="@+id/TipoBusca"
         android:layout_marginTop="12dp"
         android:text="N° Quartos" />
 

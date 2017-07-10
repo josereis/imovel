@@ -1,49 +1,52 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    android:layout_width="match_parent" android:layout_height="match_parent">
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
 
-    <TextView
-        android:id="@+id/title_descricao_anuncio"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:textAppearance="@style/TextAppearance.AppCompat.Light.SearchResult.Title"
-        android:text="DESCRIÇÃO:"
-        android:layout_alignParentTop="true" />
 
-    <TextView
-        android:id="@+id/descricao_anuncio"
-        android:layout_width="wrap_content"
+    <LinearLayout
+        android:id="@+id/item_anunciados"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="descricao do anuncio vem aqui com todos os seus belos detalhes."
-        android:layout_below="@+id/title_descricao_anuncio"
         android:layout_alignParentStart="true"
-        android:layout_marginStart="19dp" />
+        android:layout_alignParentTop="true"
+        android:orientation="vertical">
 
-    <TextView
-        android:id="@+id/title_localizacao_anuncio"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:textAppearance="@style/TextAppearance.AppCompat.Light.SearchResult.Title"
-        android:text="LOCALIZAÇÃO:"
-        android:layout_below="@+id/descricao_anuncio"
-        android:layout_alignParentStart="true"
-        android:layout_marginTop="12dp" />
+        <TextView
+            android:id="@+id/textView_decricao"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="DESCRIÇÃO:"
+            android:textAppearance="@style/TextAppearance.AppCompat.Title" />
 
-    <TextView
-        android:id="@+id/localizacao_anuncio"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignStart="@+id/descricao_anuncio"
-        android:layout_below="@+id/title_localizacao_anuncio"
-        android:text="segue o endereço do imovel aqui anunciado por este usuario" />
+        <TextView
+            android:id="@+id/textView_descricao_imovel"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Segue aqui a descricao e propaganda do imovel anunciado pelo usuario logado." />
+
+        <TextView
+            android:id="@+id/textView_localizacao"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="LOCALIZAÇÃO:"
+            android:textAppearance="@style/TextAppearance.AppCompat.Title" />
+
+        <TextView
+            android:id="@+id/textView_endereco"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="endereco do imovel." />
+    </LinearLayout>
 
     <ImageButton
-        android:id="@+id/imageButton_delete_anuncio"
+        android:id="@+id/imageButton2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentEnd="true"
-        android:layout_below="@+id/localizacao_anuncio"
+        android:layout_below="@+id/item_anunciados"
+        android:background="@color/common_google_signin_btn_text_dark_default"
         app:srcCompat="@android:drawable/ic_menu_delete" />
 
 </RelativeLayout>

@@ -40,23 +40,32 @@ public class ListaAnunciosActivity extends AppCompatActivity implements ClickRec
         mRecyclerView.setAdapter(adapter);
     }
 
-    public void buscaAnuncios() {
-        anuncios = (new ControleAnuncio()).listar();
-    }
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_lista_anuncios);
 
-        anuncios = (new ControleAnuncio()).listar();
-        if(anuncios.size() > 0) {
-            // tratamento dos casos quando possui uma quantidade de anuncios a ser exibida
-            setMRecyclerView();
-        } else {
-            String mensagem="Não foi retornado o anuncio!";
-            Toast toast = Toast.makeText(this, mensagem, Toast.LENGTH_SHORT);
-            toast.show();
+        //pega dados do usuario corrente da aplicacao
+        Bundle dadosUsuario = getIntent().getExtras();
+        if (dadosUsuario != null){
+            int tipo = dadosUsuario.getInt("tipo");
+            int quartos = dadosUsuario.getInt("quartos");
+            int banheiros = dadosUsuario.getInt("banheiros");
+            String cidade = dadosUsuario.getString("cidade");
+            String estado = dadosUsuario.getString("estado");
+
+            anuncios = (new ControleAnuncio()).busca(cidade, estado, tipo, quartos, banheiros);
+            if(anuncios.size() > 0) {
+                // tratamento dos casos quando possui uma quantidade de anuncios a ser exibida
+                setMRecyclerView();
+            } else {
+                String mensagem="Não foi retornado o anuncio!";
+                Toast toast = Toast.makeText(this, mensagem, Toast.LENGTH_SHORT);
+                toast.show();
+
+                Intent intent = new Intent(this, DashboardActivity.class);
+                startActivity(intent);
+            }
         }
     }
 
