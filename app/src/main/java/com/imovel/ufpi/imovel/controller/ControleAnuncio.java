@@ -35,13 +35,16 @@ public class ControleAnuncio {
         Imovel imovel = new Imovel();
         imovel.setNumeroQuartos(3);
         imovel.setNumeroBanheiros(2);
+        imovel.setNumeroVagasGaragem(2);
         imovel.setEndereco(end);
+        imovel.setArea(95.4);
         imovel.setDescricao("Imovel em otima condição, rescem reformado, bem arejado e em otima localização.");
 
         // anuncio 1
         Anuncio anuncio = new AnuncioAluguel();
         anuncio.setImovel(imovel);
         anuncio.setAnunciante(usuario);
+        ((AnuncioAluguel) anuncio).setValorMensal(1235.00);
 
         anuncios.add(anuncio);
     }
