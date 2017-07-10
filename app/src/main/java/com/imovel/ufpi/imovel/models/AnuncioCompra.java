@@ -20,4 +20,5 @@ public class AnuncioCompra extends Anuncio {
     public AnuncioCompra() {
 
     }
+
 }

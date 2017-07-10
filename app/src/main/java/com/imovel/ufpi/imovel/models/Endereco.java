@@ -1,10 +1,12 @@
 package com.imovel.ufpi.imovel.models;
 
+import java.io.Serializable;
+
 /**
  * Created by josereis on 30/06/17.
  */
 
-public class Endereco {
+public class Endereco implements Serializable {
     private int CEP;
     private String rua;
     private String numero;

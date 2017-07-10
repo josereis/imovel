@@ -1,10 +1,12 @@
 package com.imovel.ufpi.imovel.models;
 
+import java.io.Serializable;
+
 /**
  * Created by josereis on 01/07/17.
  */
 
-public class Imovel {
+public class Imovel implements Serializable {
     private long id;
     private double area;
     private String descricao;

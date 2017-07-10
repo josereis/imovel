@@ -20,4 +20,5 @@ public class AnuncioAluguel extends Anuncio {
     public AnuncioAluguel() {
 
     }
+
 }

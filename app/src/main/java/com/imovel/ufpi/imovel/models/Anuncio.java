@@ -1,5 +1,6 @@
 package com.imovel.ufpi.imovel.models;
 
+import android.os.Parcel;
 import android.os.Parcelable;
 
 import java.io.Serializable;
@@ -8,7 +9,7 @@ import java.io.Serializable;
  * Created by josereis on 01/07/17.
  */
 
-public abstract class Anuncio {
+public abstract class Anuncio implements Serializable {
     private long id;
     private Imovel imovel;
     private Usuario anunciante;
