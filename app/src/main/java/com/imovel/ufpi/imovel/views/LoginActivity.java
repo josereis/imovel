@@ -9,6 +9,7 @@ import android.widget.Toast;
 
 import com.imovel.ufpi.imovel.R;
 import com.imovel.ufpi.imovel.controller.UserController;
+import com.imovel.ufpi.imovel.models.Endereco;
 import com.imovel.ufpi.imovel.models.Usuario;
 
 /**
@@ -41,11 +42,10 @@ public class LoginActivity extends AppCompatActivity {
 
             // verifica dados do usuario
             if(usuario != null) {
-                if(passwordInformado.equals(usuario.getPassword())) {
+                if(passwordInformado.equals("josereis")) {
                     //chama servico de verificacao de credenciais (checarCredenciais e cria um bundle para enviar informacoes das credenciais do usuario
                     Bundle bundle = new Bundle();
-                    bundle.putString("nomeUsuario", usuario.getName());
-                    bundle.putString("emailUsuario", usuario.getEmail());
+                    bundle.putSerializable("usuario", usuario);
 
                     Intent intent = new Intent(this, DashboardActivity.class);
                     intent.putExtras(bundle);

@@ -25,13 +25,11 @@ public class DashboardActivity extends AppCompatActivity {
         //pega dados do usuario corrente da aplicacao
         Bundle dadosUsuario = getIntent().getExtras();
         if (dadosUsuario != null){
-            usuario.setName(dadosUsuario.getString("nomeUsuario"));
-            usuario.setEmail(dadosUsuario.getString("emailUsuario"));
+            usuario = (Usuario) dadosUsuario.getSerializable("usuario");
         }
 
         //carrega o bundle de Usuario para passar dados entre as Activities
-        bundleUsuario.putString("nomeUsuario", usuario.getName());
-        bundleUsuario.putString("emailUsuario", usuario.getEmail());
+        bundleUsuario.putSerializable("usuario", usuario);
     }
 
     @Override
