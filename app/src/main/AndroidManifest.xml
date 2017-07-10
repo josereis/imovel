@@ -25,6 +25,11 @@
         <activity
             android:name=".views.ListaAnunciosActivity"
             android:label="@string/title_activity_lista_anuncios"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name=".views.ExibirAnuncio" />
+        <activity
+            android:name=".views.AnunciarImovel"
+            android:label="@string/title_activity_anunciar_imovel"
             android:theme="@style/AppTheme.NoActionBar"></activity>
     </application>
 

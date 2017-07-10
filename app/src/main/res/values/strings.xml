@@ -21,5 +21,6 @@
     <string name="action_contactados">Contactados</string>
     <string name="action_logout">Logout</string>
     <string name="title_activity_lista_anuncios">ListaAnunciosActivity</string>
+    <string name="title_activity_anunciar_imovel">AnunciarImovel</string>
 
 </resources>
