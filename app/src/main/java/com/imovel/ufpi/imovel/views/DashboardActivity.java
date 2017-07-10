@@ -52,21 +52,30 @@ public class DashboardActivity extends AppCompatActivity {
         switch(id) {
             case R.id.action_anunciar:
                 {
-                    Toast.makeText(getApplicationContext(), "Cadastrar um novo Anuncio.", Toast.LENGTH_LONG).show();
+//                    Toast.makeText(getApplicationContext(), "Cadastrar um novo Anuncio.", Toast.LENGTH_LONG).show();
+                    Intent intent = new Intent(this, AnunciarImovel.class);
+
+                    intent.putExtras(bundleUsuario);
+
+                    startActivity(intent);
                 }
+                break;
             case R.id.action_favoritos:
                 {
                     Toast.makeText(getApplicationContext(), "Exibe todos os anuncios que forma favoritados.", Toast.LENGTH_LONG).show();
                 }
+                break;
             case R.id.action_contactados:
                 {
                     Toast.makeText(getApplicationContext(), "Listas os anunciantes contactados.", Toast.LENGTH_LONG).show();
                 }
+                break;
             case R.id.action_logout:
-            {
-                Toast.makeText(getApplicationContext(), "Logout de usuario.", Toast.LENGTH_LONG).show();
-//                logout();
-            }
+                {
+//                    Toast.makeText(getApplicationContext(), "Logout de usuario.", Toast.LENGTH_LONG).show();
+                    logout();
+                }
+                break;
             default:
                 break;
         }
