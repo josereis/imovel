@@ -1,0 +1,239 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.imovel.ufpi.imovel.views.ExibirAnuncio">
+
+
+    <RelativeLayout
+        android:id="@+id/relativelayout_exibeanuncio"
+        android:layout_width="395dp"
+        android:layout_height="495dp"
+        tools:layout_editor_absoluteX="8dp"
+        tools:layout_editor_absoluteY="16dp">
+
+        <TextView
+            android:id="@+id/textview_anunciante_exibeanuncio"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:text="Anunciante:"
+            android:textAppearance="@style/TextAppearance.AppCompat.Light.SearchResult.Title" />
+
+        <TextView
+            android:id="@+id/textView_nome_anunciante"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/textview_anunciante_exibeanuncio"
+            android:layout_marginStart="11dp"
+            android:layout_toEndOf="@+id/textview_anunciante_exibeanuncio"
+            android:text="Anunciante Name"
+            android:textAppearance="@style/TextAppearance.AppCompat.SearchResult.Subtitle" />
+
+        <TextView
+            android:id="@+id/textView_tipo_anuncio"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/textview_anunciante_exibeanuncio"
+            android:layout_marginTop="17dp"
+            android:text="Tipo de Anuncio:"
+            android:textAppearance="@style/TextAppearance.AppCompat.Light.SearchResult.Title" />
+
+        <TextView
+            android:id="@+id/textView_aluguel_venda"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/textView_tipo_anuncio"
+            android:layout_marginStart="12dp"
+            android:layout_toEndOf="@+id/textView_tipo_anuncio"
+            android:text="Aluguel ou Venda"
+            android:textAppearance="@style/TextAppearance.AppCompat.SearchResult.Subtitle" />
+
+        <ProgressBar
+            android:id="@+id/progressBar3"
+            style="?android:attr/progressBarStyleHorizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/textView_tipo_anuncio"
+            android:layout_marginTop="13dp" />
+
+        <TextView
+            android:id="@+id/textView_dados_imovel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/progressBar3"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="15dp"
+            android:text="Dados do Imóvel"
+            android:textAppearance="@style/TextAppearance.AppCompat.Widget.ActionMode.Title" />
+
+        <TextView
+            android:id="@+id/textView_NQ"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/textView_dados_imovel"
+            android:layout_marginTop="16dp"
+            android:text="Nº. de Quartos: "
+            android:textAppearance="@style/TextAppearance.AppCompat.Light.SearchResult.Subtitle" />
+
+        <TextView
+            android:id="@+id/textView_quantidade_quartos"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/textView_NG"
+            android:layout_alignStart="@+id/textView_quantidade_garagens"
+            android:layout_alignTop="@+id/textView_NQ"
+            android:text="000" />
+
+        <TextView
+            android:id="@+id/textView_NB"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@+id/textView_aluguel_venda"
+            android:layout_alignTop="@+id/textView_quantidade_quartos"
+            android:layout_marginStart="25dp"
+            android:text="Nº. Banheiros:"
+            android:textAppearance="@style/TextAppearance.AppCompat.Light.SearchResult.Subtitle" />
+
+        <TextView
+            android:id="@+id/textView_quantidade_banheiros"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/textView_NB"
+            android:layout_alignParentEnd="true"
+            android:layout_alignTop="@+id/textView_NB"
+            android:layout_toEndOf="@+id/textView_NB"
+            android:text="000" />
+
+        <TextView
+            android:id="@+id/textView_NG"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/textView_NQ"
+            android:layout_marginTop="18dp"
+            android:text="Nº. de Garagens:"
+            android:textAppearance="@style/TextAppearance.AppCompat.Light.SearchResult.Subtitle" />
+
+        <TextView
+            android:id="@+id/textView_quantidade_garagens"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/textView_NG"
+            android:layout_alignTop="@+id/textView_NG"
+            android:layout_toStartOf="@+id/textView_NB"
+            android:text="000" />
+
+        <TextView
+            android:id="@+id/textView_AT"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@+id/textView_NB"
+            android:layout_alignTop="@+id/textView_quantidade_garagens"
+            android:text="Área (m²):"
+            android:textAppearance="@style/TextAppearance.AppCompat.Light.SearchResult.Subtitle" />
+
+        <TextView
+            android:id="@+id/textView_area"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/textView_AT"
+            android:layout_alignTop="@+id/textView_AT"
+            android:layout_toEndOf="@+id/textView_NB"
+            android:text="000" />
+
+        <TextView
+            android:id="@+id/textView30"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentStart="true"
+            android:layout_centerVertical="true"
+            android:layout_toStartOf="@+id/textView_dados_imovel"
+            android:text="Endereço:"
+            android:textAppearance="@style/TextAppearance.AppCompat.Title" />
+
+        <TextView
+            android:id="@+id/textView_endereco"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/textView30"
+            android:text="endereço" />
+
+        <TextView
+            android:id="@+id/textView34"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/textView_endereco"
+            android:layout_marginTop="14dp"
+            android:text="Descrição:"
+            android:textAppearance="@style/TextAppearance.AppCompat.Title" />
+
+        <TextView
+            android:id="@+id/textView_decricao"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_below="@+id/textView34"
+            android:layout_marginTop="11dp"
+            android:text="descricao" />
+
+        <TextView
+            android:id="@+id/textView37"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/textView_decricao"
+            android:layout_marginTop="15dp"
+            android:layout_toStartOf="@+id/textView_AT"
+            android:text="Valor Mensal (R$):"
+            android:textAppearance="@style/TextAppearance.AppCompat.Title" />
+
+        <TextView
+            android:id="@+id/textView_preco"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/textView37"
+            android:layout_alignParentEnd="true"
+            android:layout_alignTop="@+id/textView37"
+            android:layout_toEndOf="@+id/textView37"
+            android:text="valor"
+            android:textAppearance="@style/TextAppearance.AppCompat.SearchResult.Subtitle" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/textView37"
+            android:layout_marginTop="15dp"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/button_ver_mapa"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.30"
+                android:text="VER NO MAPA"
+                android:onClick="verMapa"/>
+
+            <Button
+                android:id="@+id/button_contactar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.30"
+                android:text="CONTACTAR"
+                android:onClick="contactar"/>
+        </LinearLayout>
+
+
+    </RelativeLayout>
+</android.support.constraint.ConstraintLayout>
