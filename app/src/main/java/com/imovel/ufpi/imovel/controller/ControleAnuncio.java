@@ -26,6 +26,8 @@ public class ControleAnuncio {
         end.setBairro("Areias");
         end.setCidade("Angical do Piauí");
         end.setRua("Rua Marcelino Sousa");
+//        end.setLatitude();
+//        end.setLongitude();
 
         // criando um usuario teste
         Usuario usuario = new Usuario();
