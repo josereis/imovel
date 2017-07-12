@@ -15,6 +15,7 @@ import java.util.ArrayList;
 
 public class ControleAnuncio {
     private final int ALUGUEL = 1;
+    private long ids = 1;
     private ArrayList<Anuncio> anuncios = new ArrayList<Anuncio>();
 
     public ControleAnuncio() {
@@ -54,6 +55,18 @@ public class ControleAnuncio {
 
     public ArrayList<Anuncio> listar(){
         return anuncios;
+    }
+
+    public void inserir(Anuncio anuncio) {
+        if(anuncio != null) {
+            anuncios.add(anuncio);
+        }
+    }
+
+    public void remover(Anuncio anuncio) {
+        if(anuncio != null) {
+            anuncios.remove(anuncio);
+        }
     }
 
     public ArrayList<Anuncio> buscarAnuncioUsuario(String cpf) {
