@@ -30,7 +30,9 @@
         <activity
             android:name=".views.AnunciarImovel"
             android:label="@string/title_activity_anunciar_imovel"
-            android:theme="@style/AppTheme.NoActionBar"></activity>
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name=".views.CadastraEnderecoActivity" />
+        <activity android:name=".views.ConfirmaAnuncioActivity"></activity>
     </application>
 
 </manifest>
