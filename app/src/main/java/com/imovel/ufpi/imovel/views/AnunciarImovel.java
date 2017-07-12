@@ -1,5 +1,6 @@
 package com.imovel.ufpi.imovel.views;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.design.widget.FloatingActionButton;
 import android.support.design.widget.Snackbar;
@@ -8,6 +9,7 @@ import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.support.v7.widget.Toolbar;
 import android.view.View;
+import android.widget.Toast;
 
 import com.imovel.ufpi.imovel.R;
 import com.imovel.ufpi.imovel.controller.ControleAnuncio;
@@ -61,10 +63,28 @@ public class AnunciarImovel extends AppCompatActivity implements ClickRecyclerVi
         incluirAnuncio.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Snackbar.make(view, "Replace with your own action", Snackbar.LENGTH_LONG)
-                        .setAction("Action", null).show();
+                CadastrarNovoAnuncio();
             }
         });
+    }
+
+    public void CadastrarNovoAnuncio() {
+        Bundle dadosUsuario = new Bundle();
+        dadosUsuario.putSerializable("usuario", usuario);
+
+        Intent intent = new Intent(this, CadastraEnderecoActivity.class);
+        intent.putExtras(dadosUsuario);
+        startActivity(intent);
+    }
+
+    @Override
+    public void onBackPressed() {
+        Bundle dadosUsuario = new Bundle();
+        dadosUsuario.putSerializable("usuario", usuario);
+
+        Intent intent = new Intent(this, DashboardActivity.class);
+        intent.putExtras(dadosUsuario);
+        startActivity(intent);
     }
 
     @Override
