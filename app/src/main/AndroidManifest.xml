@@ -38,6 +38,7 @@
             android:name=".views.AnunciarImovel"
             android:label="@string/title_activity_anunciar_imovel"
             android:theme="@style/AppTheme.NoActionBar" />
+<<<<<<< HEAD
         <!--
              The API key for Google Maps-based APIs is defined as a string resource.
              (See the file "res/values/google_maps_api.xml").
@@ -57,6 +58,10 @@
         <activity
             android:name=".views.MapsFragment"
             android:label="@string/title_activity_maps"></activity>
+=======
+        <activity android:name=".views.CadastraEnderecoActivity" />
+        <activity android:name=".views.ConfirmaAnuncioActivity"></activity>
+>>>>>>> 64d3195e1421bce082b3abe108d178ee395c34de
     </application>
 
 </manifest>

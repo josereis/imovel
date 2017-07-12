@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.imovel.ufpi.imovel.views.ConfirmaAnuncioActivity"
+    app:layout_constraintTop_toTopOf="@+id/relativeLayout"
+    tools:layout_editor_absoluteX="0dp"
+    android:layout_marginTop="0dp">
+
+    <RelativeLayout
+        android:layout_width="368dp"
+        android:layout_height="495dp"
+        tools:layout_editor_absoluteX="8dp"
+        tools:layout_editor_absoluteY="8dp"
+        android:id="@+id/relativeLayout">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:orientation="horizontal"
+            android:id="@+id/linearLayout">
+
+            <TextView
+                android:id="@+id/textView_tipoAnuncio"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Tipo de Anuncio:"
+                android:textAppearance="@style/TextAppearance.AppCompat.SearchResult.Title" />
+
+            <RadioGroup
+                android:id="@+id/radioGroup_tipo_anuncio"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1">
+
+                <RadioButton
+                    android:id="@+id/radioButton_venda"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Venda" />
+
+                <RadioButton
+                    android:id="@+id/radioButton_aluguel"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Aluguel" />
+            </RadioGroup>
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/textView_valor"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/linearLayout"
+            android:layout_marginTop="25dp"
+            android:text="Valor R$:"
+            android:textAppearance="@style/TextAppearance.AppCompat.Title" />
+
+        <EditText
+            android:id="@+id/editText_valor"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/textView_valor"
+            android:layout_alignBottom="@+id/textView_valor"
+            android:layout_alignParentEnd="true"
+            android:layout_toEndOf="@+id/textView_valor"
+            android:ems="10"
+            android:inputType="number" />
+
+        <Button
+            android:id="@+id/button_cadastra_anuncio"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/editText_valor"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="147dp"
+            android:text="Cadastrar Anuncio"
+            android:onClick="cadastrarAnuncio"/>
+    </RelativeLayout>
+</android.support.constraint.ConstraintLayout>
